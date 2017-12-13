@@ -1,0 +1,21 @@
+{
+    "license": "MIT",
+    "version": "1.0.0",
+    "author": "ctf0",
+    "name": "vue-bounty",
+    "main": "src/bounty.vue",
+    "description": "vuejs wrapper for bounty",
+    "homepage": "https://github.com/ctf0/vue-bounty",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/ctf0/vue-bounty.git"
+    },
+    "dependencies": {
+        "bounty": "^1.0.0"
+    },
+    "keywords": [
+        "vue",
+        "bounty",
+        "component"
+    ]
+}
