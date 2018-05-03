@@ -10,6 +10,9 @@
         "type": "git",
         "url": "https://github.com/ctf0/vue-bounty.git"
     },
+    "peerDependecies": {
+        "vue": "^2.0.0"
+    },
     "dependencies": {
         "bounty": "^1.0.0"
     },

@@ -29,7 +29,6 @@ export default {
                 this.init(val, oldVal || 0)
             }, 100)
         }
-    },
-    render() {}
+    }
 }
 </script>

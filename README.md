@@ -10,16 +10,16 @@ npm install vue-bounty --save
 
 ## Usage
 
-**1-** register the component
+- register the component
 
-```js
-window.Vue = require('vue')
+    ```js
+    window.Vue = require('vue')
 
-Vue.component('Bounty', require('vue-bounty'))
-```
+    Vue.component('Bounty', require('vue-bounty'))
+    ```
 
-**2-** now use it like
+- now use it like
 
-```vue
-<bounty :value="100"></bounty>
-```
+    ```vue
+    <bounty :value="100"></bounty>
+    ```
