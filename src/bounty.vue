@@ -6,9 +6,30 @@
 import bounty from 'bounty'
 
 export default {
-    props: ['value'],
+    props: {
+        initialValue: {
+            type: Number,
+            default: 0,
+            required: false
+        },
+        value: {
+            type: Number,
+            default: 0,
+            required: true
+        },
+        animationDelay: {
+            type: Number,
+            default: 100,
+            required: false
+        },
+        letterAnimationDelay: {
+            type: Number,
+            default: 100,
+            required: false
+        }
+    },
     mounted() {
-        this.init(this.value, 0)
+        this.init(this.value, this.initialValue)
     },
     methods: {
         init(val, old) {
@@ -18,17 +39,16 @@ export default {
                 initialValue: old,
                 lineHeight: 1,
                 letterSpacing: 1,
-                animationDelay: 100,
-                letterAnimationDelay: 100
+                animationDelay: this.animationDelay,
+                letterAnimationDelay: this.letterAnimationDelay
             })
         }
     },
     watch: {
         value(val, oldVal) {
-            setTimeout(() => {
-                this.init(val, oldVal || 0)
-            }, 100)
+            this.init(val, oldVal || 0)
         }
-    }
+    },
+    render() {}
 }
 </script>

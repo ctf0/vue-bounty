@@ -18,8 +18,19 @@ npm install vue-bounty --save
     Vue.component('Bounty', require('vue-bounty'))
     ```
 
-- now use it like
-
+- now use it like "all the props are optional except **value**"
+    > + **value** `type: number, default:0`
+    > + **initial-value** `type: number, default:0`
+    > + **animation-delay** `type: number, default:100`
+    > + **letter-animation-delay** `type: number, default:100`
+    > + **line-height** `type: number, default:1`
+    > + **letter-spacing** `type: number, default:1`
     ```vue
-    <bounty :value="100"></bounty>
+    <bounty :value="1000"
+        :initial-value="10"
+        :animation-delay="100"
+        :letter-animation-delay="100"
+        :line-height="1"
+        :letter-spacing="1">
+    </bounty>
     ```
