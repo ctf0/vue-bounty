@@ -1,5 +1,5 @@
 <template>
-    <span/>
+    <span :class="className" />
 </template>
 
 <script>
@@ -8,12 +8,12 @@ import bounty from 'bounty'
 export default {
     props: {
         initialValue: {
-            type: Number,
+            type: [String, Number],
             default: 0,
             required: false
         },
         value: {
-            type: Number,
+            type: [String, Number],
             default: 0,
             required: true
         },
@@ -26,6 +26,21 @@ export default {
             type: Number,
             default: 100,
             required: false
+        },
+        lineHeight: {
+            type: Number,
+            default: 1,
+            required: false
+        },
+        letterSpacing: {
+            type: Number,
+            default: 1,
+            required: false
+        },
+        className: {
+            type: String,
+            default: 'js-bounty',
+            required: false
         }
     },
     mounted() {
@@ -37,8 +52,8 @@ export default {
                 el: this.$el,
                 value: val,
                 initialValue: old,
-                lineHeight: 1,
-                letterSpacing: 1,
+                lineHeight: this.lineHeight,
+                letterSpacing: this.letterSpacing,
                 animationDelay: this.animationDelay,
                 letterAnimationDelay: this.letterAnimationDelay
             })
