@@ -1,5 +1,5 @@
 <template>
-    <span :class="className" />
+    <span class="js-bounty" />
 </template>
 
 <script>
@@ -35,11 +35,6 @@ export default {
         letterSpacing: {
             type: Number,
             default: 1,
-            required: false
-        },
-        className: {
-            type: String,
-            default: 'js-bounty',
             required: false
         }
     },

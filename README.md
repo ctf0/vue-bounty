@@ -25,7 +25,8 @@ npm install vue-bounty --save
         :animation-delay="100"
         :letter-animation-delay="100"
         :line-height="1"
-        :letter-spacing="1">
+        :letter-spacing="1"
+        class="js-bounty">
     </bounty>
     ```
 
@@ -37,4 +38,3 @@ npm install vue-bounty --save
     | letter-animation-delay | :x:                | number          | 100       |
     | line-height            | :x:                | number          | 1         |
     | letter-spacing         | :x:                | number          | 1         |
-    | class-name             | :x:                | string          | js-bounty |
