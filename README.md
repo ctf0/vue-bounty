@@ -1,6 +1,8 @@
-# Vue Bounty
-
-[![npm](https://img.shields.io/npm/v/vue-bounty.svg?style=for-the-badge)](https://www.npmjs.com/package/vue-bounty) [![npm](https://img.shields.io/npm/dt/vue-bounty.svg?style=for-the-badge)](https://www.npmjs.com/package/vue-bounty)
+<h1 align="center">
+    Vue Bounty
+    <br>
+    <a href="https://www.npmjs.com/package/vue-bounty"><img src="https://img.shields.io/npm/v/vue-bounty.svg?style=for-the-badge" alt="npm" /></a> <a href="https://www.npmjs.com/package/vue-bounty"><img src="https://img.shields.io/npm/dt/vue-bounty.svg?style=for-the-badge" alt="npm" /></a>
+</h1>
 
 ## Installation
 
