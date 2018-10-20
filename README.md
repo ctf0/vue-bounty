@@ -21,7 +21,7 @@ npm install vue-bounty --save
     ```
 
 - now use it like
-    ```vue
+    ```html
     <bounty value="1000"
         initial-value="10"
         :animation-delay="100"
