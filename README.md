@@ -17,7 +17,7 @@ npm install vue-bounty --save
     ```js
     window.Vue = require('vue')
 
-    Vue.component('Bounty', require('vue-bounty'))
+    Vue.component('Bounty', require('vue-bounty').default)
     ```
 
 - now use it like
